@@ -24,7 +24,8 @@ THEN the saved events persist
 
 ## PSEUDOCODE
 
-<!--  1. build a home page with the current date at the top
+<!--  
+1. build a home page with the current date at the top
 2. create a section below with boxes for different times of the work day
 2.1 left section will display time, center will be user input events, right will be a save feature
 3. each time-block will be color-coded based on "past, present, or future"
