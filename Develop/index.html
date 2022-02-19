@@ -26,6 +26,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <br>
       <p id="currentDate" class="lead"></p>
       <p id="currentTime" class="lead"></p>
     </header>
@@ -140,6 +141,13 @@
 
     <!-- Current time clock/calendar -->
     <script>
+      var liveDate = document.getElementById("currentDate");
+
+      document.getElementById("currentDate").innerHTML =
+      `${moment().format('ll')}`;
+
+      setInterval(function () {liveDate.innerHTML = `${moment().format('ll')}`}, 1000);
+
       var liveTime = document.getElementById("currentTime");
 
       document.getElementById("currentTime").innerHTML =
