@@ -30,16 +30,16 @@
       <p id="currentDate" class="current"></p>
       <p id="currentTime" class="current"></p>
     </header>
-    <div class="container">
 
       <!-- Timeblocks go here -->
     <div class="container">
+    <form>
       <div class="row time-block time-block">
         <div class="col- hour">
           9 AM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -50,7 +50,7 @@
           10 AM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -61,7 +61,7 @@
           11 AM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -72,7 +72,7 @@
           12 PM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -83,7 +83,7 @@
           1 PM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -94,7 +94,7 @@
           2 PM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -105,7 +105,7 @@
           3 PM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -116,7 +116,7 @@
           4 PM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
@@ -127,36 +127,18 @@
           5 PM
         </div>
         <div class="col-xl">
-          One of three columns
+          <input type="text">
         </div>
         <div class="col-">
           <button type="button" class="btn btn-primary saveBtn">Save</button>
         </div>
       </div>
-        
-      </div>
+    </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-    <!-- Current time clock/calendar -->
-    <script>
-      var liveDate = document.getElementById("currentDate");
-
-      document.getElementById("currentDate").innerHTML =
-      `${moment().format('ll')}`;
-
-      setInterval(function () {liveDate.innerHTML = `${moment().format('ll')}`}, 1000);
-
-      var liveTime = document.getElementById("currentTime");
-
-      document.getElementById("currentTime").innerHTML =
-      `${moment().format("LTS")}`;
-
-      setInterval(function () {liveTime.innerHTML = `${moment().format("LTS")}`}, 1000);
-
-    </script>
-
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

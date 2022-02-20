@@ -32,8 +32,8 @@ textarea{
 
 .row {
   flex-wrap: nowrap;
-  white-space: pre-wrap;
-  height: 80px;
+  width: 100%;
+  height: 5vw;
   border-top: 1px solid white;
 }
 
@@ -59,7 +59,7 @@ textarea{
 }
 
 .saveBtn {
-  height:inherit;
+  height:100%;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -75,4 +75,27 @@ textarea{
 .current {
   font-size: 2vw;
   font-weight: bold;
+}
+
+.display-3 {
+  font-size: 7.5vw;
+}
+
+.lead {
+  font-size: 2.5vw;
+}
+
+.container {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 99%;
+}
+
+div.col-.hour {
+  width: 10%;
+  font-size: 3vw;
+  text-align: center;
 }
