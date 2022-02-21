@@ -15,14 +15,12 @@ setInterval(function () {liveTime.innerHTML = `${moment().format("LTS")}`}, 1000
 
 // Save input to local storage
 function save(){
-    var text_to_save=document.getElementById('textfield').value;
+    var text_to_save=document.getElementById('textarea').value;
     localStorage.setItem("text", text_to_save); // save the item
     }
 
 // Retrieve saved input from local storage
 function retrieve(){
     var text=localStorage.getItem("text"); // retrieve
-    document.getElementById('textDiv').innerHTML = text; // display
+    document.getElementById('textarea').innerHTML = text; // display
     }
-
-// Enable user input into time-block
