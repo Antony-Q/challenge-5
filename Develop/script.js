@@ -1,26 +1,38 @@
-// Current time clock/calendar
-var liveDate = document.getElementById("currentDate");
+// Initialize Jquery
+// $(document).ready(function(){
 
-document.getElementById("currentDate").innerHTML =
-`${moment().format('ll')}`;
+// // Current time clock/calendar - Jquery
+//     var liveDate = document.getElementById("currentDate");
 
-setInterval(function () {liveDate.innerHTML = `${moment().format('ll')}`}, 1000);
+//     document.getElementById("currentDate").innerHTML =
+//     `${moment().format('ll')}`;
 
-var liveTime = document.getElementById("currentTime");
+//     setInterval(function () {liveDate.innerHTML = `${moment().format('ll')}`}, 1000);
 
-document.getElementById("currentTime").innerHTML =
-`${moment().format("LTS")}`;
+//     var liveTime = document.getElementById("currentTime");
 
-setInterval(function () {liveTime.innerHTML = `${moment().format("LTS")}`}, 1000);
+//     document.getElementById("currentTime").innerHTML =
+//     `${moment().format("LTS")}`;
+
+//     setInterval(function () {liveTime.innerHTML = `${moment().format("LTS")}`}, 1000);
+
+
+//     $("saveBtn").click(save()
+// )});
 
 // Save input to local storage
-function save(){
-    var text_to_save=document.getElementById('textarea').value;
-    localStorage.setItem("text", text_to_save); // save the item
-    }
 
-// Retrieve saved input from local storage
-function retrieve(){
-    var text=localStorage.getItem("text"); // retrieve
-    document.getElementById('textarea').innerHTML = text; // display
-    }
+// Save button onclick - Jquery
+$(document).ready(function () {
+    $(".saveBtn").on("click", function () {
+        var text_to_save = $(this).siblings(".col-xl").next()
+        console.log(text_to_save)
+        localStorage.setItem("text", text_to_save); // save the item
+    })
+    function retrieve() {
+        var text = localStorage.getItem("text"); // retrieve
+        document.getElementById('textInput').innerHTML = text; // display
+    };
+});
+
+// Retrieve saved input from local storage (FOR LOOP)
