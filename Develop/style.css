@@ -56,6 +56,7 @@ textarea {
 
 .saveBtn {
   height:100%;
+  max-width: fit-content;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -85,18 +86,16 @@ textarea {
   width: 100%;
 }
 
-textarea.textInput {
+textarea.textInput.col-xl {
   width: 100%;
   padding: 0 0 3em 0;
   line-height: 1em;
-  overflow-wrap: normal;
-  white-space: pre-wrap;
 }
 
 .col-.hour {
   text-align: center;
   margin: auto;
-  padding: 4% 0 4% 0;
+  padding: 3% 0 3% 0;
   min-width:5%;
   white-space: nowrap;
 }
@@ -104,4 +103,9 @@ textarea.textInput {
 .col-xl {
   margin: auto;
   min-width: 90%;
+}
+
+.textInput {
+  overflow-wrap: break-word;
+  white-space: normal;
 }
